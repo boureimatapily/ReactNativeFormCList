@@ -9,7 +9,7 @@ class ContactScreem extends Component {
   render() {
     return (
       <View>
-        <Text> textInComponent </Text>
+        <Text>hello </Text>
       </View>
     )
   }
