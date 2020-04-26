@@ -7,7 +7,7 @@ class LoginScreem extends React.Component {
         return (
             <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
                 <View style={styles.LoginTextContainer}>
-                    <Text style={styles.LoginText}> Log in </Text>
+                    <Text style={styles.LoginText}> Log in  </Text>
                 </View>
                 <View>
                     <TextInput placeholder="Username" placeholderTextColor="#aaaaaa" style={styles.input} />
@@ -37,14 +37,14 @@ const styles = StyleSheet.create({
     },
     LoginText: {
         fontSize: 50,
-        color: "#4903fc",
+        color: "red",
     },
     LoginTextContainer: {
         marginBottom: 30
     },
     input: {
         borderBottomWidth: 2,
-        borderBottomColor: "#4903fc",
+        borderBottomColor: "red",
         fontSize: 20,
         height: 50,
         marginTop: 20
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     },
     ButtonContainer: {
         height: 50,
-        backgroundColor: "#4903fc",
+        backgroundColor: "red",
         alignItems: "center",
         justifyContent: "center",
         borderRadius: 10,
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     },
     signupText: {
         fontSize: 16,
-        color: "#4903fc"
+        color: "red"
     },
 
 
