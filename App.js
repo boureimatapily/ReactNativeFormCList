@@ -4,6 +4,8 @@ import LoginScreem from './LoginScreem';
 import ContactScreeam from "./ContactScreem";
 import Contact from './Components/Contact';
 import Signup from './Signup';
+import Pet from './Components/Pet';
+import PetList from './PetList';
 
 
 export default function App() {
@@ -12,7 +14,8 @@ export default function App() {
       {/* <LoginScreem /> */}
       {/* <ContactScreeam /> */}
       {/* <Contact /> */}
-      <Signup />
+      {/* <Signup /> */}
+      <PetList />
     </View>
   );
 }
