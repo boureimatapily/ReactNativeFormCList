@@ -23,11 +23,11 @@ class Signup extends React.Component {
                      
                      <TextInput placeholder="Password Again" placeholderTextColor="#aaaaaa" style={styles.input}
                             secureTextEntry={true}  />
-                    <Text style={styles.ForgotPassword}>Forgot Password</Text>
+                    
                 </View>
 
                 <TouchableOpacity style={styles.ButtonContainer}>
-                    <Text style={styles.ButtonText}>Log in</Text>
+                    <Text style={styles.ButtonText}>Sign up</Text>
                 </TouchableOpacity>
 
                 <View style={styles.noAccountContaier}>
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     },
     plus:{
         position:"absolute",
-       bottom:195,
+       bottom:170,
         left:20,
 
         marginRight:10
