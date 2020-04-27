@@ -1,20 +1,26 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView,TextInput  } from 'react-native'
+import {AntDesign} from '@expo/vector-icons'
 
 
 class Signup extends React.Component {
     render() {
         return (
-            <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+            <ScrollView  showsVerticalScrollIndicator={false}>
+                <AntDesign name="plus" size={20} color="red" style={styles.plus} />
+                <View style={styles.container}>
+
                 <View style={styles.LoginTextContainer}>
-                    <Text style={styles.LoginText}> Log in  </Text>
+                    <Text style={styles.LoginText}> Sign up  </Text>
                 </View>
                 <View>
                     <TextInput placeholder="Username" placeholderTextColor="#aaaaaa" style={styles.input} />
                     <TextInput placeholder="Email" placeholderTextColor="#aaaaaa" style={styles.input} />
+                    
 
                     <TextInput placeholder="Password" placeholderTextColor="#aaaaaa" style={styles.input}
                             secureTextEntry={true}  />
+                     
                      <TextInput placeholder="Password Again" placeholderTextColor="#aaaaaa" style={styles.input}
                             secureTextEntry={true}  />
                     <Text style={styles.ForgotPassword}>Forgot Password</Text>
@@ -25,8 +31,9 @@ class Signup extends React.Component {
                 </TouchableOpacity>
 
                 <View style={styles.noAccountContaier}>
-                    <Text style={styles.noAccountText}>Don't have an account </Text>
-                    <Text style={styles.signupText}>Sign up</Text>
+                    <Text style={styles.noAccountText}>Alredy have an account ? </Text>
+                    <Text style={styles.signupText}>Login</Text>
+                </View>
                 </View>
             </ScrollView>
         )
@@ -81,6 +88,13 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: "red"
     },
+    plus:{
+        position:"absolute",
+       bottom:195,
+        left:20,
+
+        marginRight:10
+    }
 
 
 });
